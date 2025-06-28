@@ -80,6 +80,24 @@ class Excel(AbstractBaseClass):
         super().save_report()
 
 
+class Yaml(AbstractBaseClass):
+
+    def __init__(self, data):
+        super().__init__(data)
+
+    def generate_some_report(self):
+        super().generate_some_report()
+
+    def generate_report(self):
+        super().generate_report()
+
+    def save_some_report(self):
+        super().save_some_report()
+
+    def save_report(self):
+        super().save_report()
+
+
 data1 = {"type": "csv"}
 report = CSV(data1)
 report.generate_report()
