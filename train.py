@@ -24,13 +24,13 @@ class CSV(BaseClass):
     def __init__(self, data):
         super().__init__(data)
 
-    def generate_some_report(self):
+    def generate_csv_report(self):
         super().generate_some_report()
 
     def generate_report(self):
         super().generate_report()
 
-    def save_some_report(self):
+    def save_csv_report(self):
         super().save_some_report()
 
     def new_class(self):
@@ -42,13 +42,13 @@ class PDF(BaseClass):
     def __init__(self, data):
         super().__init__(data)
 
-    def generate_some_report(self):
+    def generate_pdf_report(self):
         super().generate_some_report()
 
     def generate_report(self):
         super().generate_report()
 
-    def save_some_report(self):
+    def save_pdf_report(self):
         super().save_some_report()
 
     def save_report(self):
@@ -60,13 +60,13 @@ class Excel(BaseClass):
     def __init__(self, data):
         super().__init__(data)
 
-    def generate_some_report(self):
+    def generate_excel_report(self):
         super().generate_some_report()
 
     def generate_report(self):
         super().generate_report()
 
-    def save_some_report(self):
+    def save_excel_report(self):
         super().save_some_report()
 
     def save_report(self):
