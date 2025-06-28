@@ -33,8 +33,8 @@ class CSV(BaseClass):
     def save_csv_report(self):
         super().save_some_report()
 
-    def new_class(self):
-        return None
+    def save_report(self):
+        super().save_report()
 
 
 class PDF(BaseClass):
