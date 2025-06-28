@@ -85,13 +85,13 @@ class Yaml(AbstractBaseClass):
     def __init__(self, data):
         super().__init__(data)
 
-    def generate_some_report(self):
+    def generate_yaml_report(self):
         super().generate_some_report()
 
     def generate_report(self):
         super().generate_report()
 
-    def save_some_report(self):
+    def save_yaml_report(self):
         super().save_some_report()
 
     def save_report(self):
