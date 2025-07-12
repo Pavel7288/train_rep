@@ -1,0 +1,12 @@
+name: i learn ci|cd
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "прогоняем тесты наши"
+      - run: echo "прогоняем тесты не наши"
+      - run: echo "прогоняем интеграционные тесты"
+      - run: echo "прогоняем модульные тесты"
+      - run: echo "прогоняем энд ту энд тесты"
+      - run: echo "курим и радуемся, что всё не упало"
