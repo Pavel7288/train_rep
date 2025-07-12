@@ -1,0 +1,16 @@
+Index: train.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from abc import ABC, abstractmethod\n\n\nclass AbstractBaseClass(ABC):\n\n    def __init__(self, data):\n        self.data = data\n        self.class_name = self.__class__.__name__.lower()\n\n    @abstractmethod\n    def generate_report(self):\n        if self.data[\"type\"] == self.class_name:\n            self.generate_some_report()\n\n    @abstractmethod\n    def generate_some_report(self):\n        print(f\"Generating {self.class_name.upper()} report...\")\n\n    @abstractmethod\n    def save_report(self):\n        if self.data[\"type\"] == self.class_name:\n            self.save_some_report()\n\n    @abstractmethod\n    def save_some_report(self):\n        print(f\"Saving {self.class_name.upper()} report...\")\n\n\nclass CSV(AbstractBaseClass):\n\n    def __init__(self, data):\n        super().__init__(data)\n\n    def generate_some_report(self):\n        super().generate_some_report()\n\n    def generate_report(self):\n        super().generate_report()\n\n    def save_some_report(self):\n        super().save_some_report()\n\n    def save_report(self):\n        super().save_report()\n\n\nclass PDF(AbstractBaseClass):\n\n    def __init__(self, data):\n        super().__init__(data)\n\n    def generate_some_report(self):\n        super().generate_some_report()\n\n    def generate_report(self):\n        super().generate_report()\n\n    def save_some_report(self):\n        super().save_some_report()\n\n    def save_report(self):\n        super().save_report()\n\n\nclass Excel(AbstractBaseClass):\n\n    def __init__(self, data):\n        super().__init__(data)\n\n    def generate_some_report(self):\n        super().generate_some_report()\n\n    def generate_report(self):\n        super().generate_report()\n\n    def save_some_report(self):\n        super().save_some_report()\n\n    def save_report(self):\n        super().save_report()\n\n\ndata1 = {\"type\": \"csv\"}\nreport = CSV(data1)\nreport.generate_report()\nreport.save_report()\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/train.py b/train.py
+--- a/train.py	(revision 3c7b92bfd622f2cca1d2e20744fd39bc2c198337)
++++ b/train.py	(date 1752255356029)
+@@ -84,3 +84,4 @@
+ report = CSV(data1)
+ report.generate_report()
+ report.save_report()
++kjhlkjh
+\ No newline at end of file

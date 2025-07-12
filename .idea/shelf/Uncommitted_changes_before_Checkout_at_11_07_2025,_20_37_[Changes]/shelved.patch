@@ -1,0 +1,15 @@
+Index: train.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class BaseClass:\n\n    def __init__(self, data):\n        self.data = data\n        self.class_name = self.__class__.__name__.lower()\n\n    def generate_report(self):\n        if self.data[\"type\"] == self.class_name:\n            self.generate_some_report()\n\n    def generate_some_report(self):\n        print(f\"Generating {self.class_name.upper()} report...\")\n\n    def save_report(self):\n        if self.data[\"type\"] == self.class_name:\n            self.save_some_report()\n\n    def save_some_report(self):\n        print(f\"Saving {self.class_name.upper()} report...\")\n\n\nclass CSV(BaseClass):\n\n    def __init__(self, data):\n        super().__init__(data)\n\n    def generate_csv_report(self):\n        super().generate_some_report()\n\n    def generate_report(self):\n        super().generate_report()\n\n    def save_csv_report(self):\n        super().save_some_report()\n\n    def save_report(self):\n        super().save_report()\n\n\nclass PDF(BaseClass):\n\n    def __init__(self, data):\n        super().__init__(data)\n\n    def generate_pdf_report(self):\n        super().generate_some_report()\n\n    def generate_report(self):\n        super().generate_report()\n\n    def save_pdf_report(self):\n        super().save_some_report()\n\n    def save_report(self):\n        super().save_report()\n\n\nclass Excel(BaseClass):\n\n    def __init__(self, data):\n        super().__init__(data)\n\n    def generate_excel_report(self):\n        super().generate_some_report()\n\n    def generate_report(self):\n        super().generate_report()\n\n    def save_excel_report(self):\n        super().save_some_report()\n\n    def save_report(self):\n        super().save_report()\n\n\ndata1 = {\"type\": \"csv\"}\nreport = CSV(data1)\nreport.generate_report()\nreport.save_report()\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/train.py b/train.py
+--- a/train.py	(revision 704649380e381e8fcc9922bd51b0471ab4929221)
++++ b/train.py	(date 1752255441602)
+@@ -77,3 +77,4 @@
+ report = CSV(data1)
+ report.generate_report()
+ report.save_report()
++dfd
